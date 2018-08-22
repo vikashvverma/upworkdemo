@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- font awesome from BootstrapCDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+        <link href="/public/app.css" rel="stylesheet">
+    </head>
+    <body class="home">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">UpWork Demo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/logout" class="btn-logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="{{.picture}}"/>
+        </div>
+        <div class="card-content">
+            <h3>Hello, {{.nickname}}</h3>
+            <h4>Name, {{.name}}</h4>
+            <h4>Gender, {{.gender}}</h4>
+            <h4>Connection, {{.sub}}</h4>
+
+        </div>
+        <div class="card-footer">
+            <ul>
+                <li>
+                    <a href="{{.link}}"><i class="fa fa-send"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="/public/js.cookie.js"></script>
+    <script src="/public/user.js"> </script>
+    </body>
+</html>
